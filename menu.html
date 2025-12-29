@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Colchuck's Leavenworth</title>
+    <meta name="description" content="Colchuck's menu featuring German schnitzels, craft burgers, artisan cocktails, and Pacific Northwest craft beers in Leavenworth, WA.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-page.css">
+</head>
+<body>
+    
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/LOGO.webp" alt="Colchuck's Logo" class="navbar-logo">
+            <span class="brand-text">Colchuck's</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Private Dining</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#" class="btn reserve-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                <span class="reserve-icon">📞</span>
+                Reserve Table
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MENU HERO ================= -->
+<section class="menu-hero">
+    <div class="menu-hero-overlay"></div>
+    <div class="container">
+        <h1 class="menu-hero-title">Colchuck's <span>Menu</span></h1>
+        <p class="menu-hero-subtitle">
+            Fresh foods prepared in house with a fresh take on German cuisine. 
+            Options for everyone with regional and German beers, wines, and craft spirits.
+        </p>
+    </div>
+</section>
+
+<!-- ================= HAPPY HOUR BANNER ================= -->
+<section class="happy-hour-banner">
+    <div class="container">
+        <div class="happy-hour-box">
+            <h2>Chuck's Happy Hour</h2>
+            <p class="happy-hour-time">Daily 3:00 - 4:30</p>
+            <p class="happy-hour-deals">$5 off menu Cocktails, shareables & wine by the glass</p>
+            <p class="happy-hour-deals">Half Price Pitchers - Any pitcher half off menu price</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MENU CONTENT ================= -->
+<main class="menu-page-content">
+    <div class="container">
+        
+        <!-- SHAREABLES -->
+        <section class="menu-category" id="shareables">
+            <h2 class="category-title">Shareables</h2>
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Pancetta Deviled Eggs</h3>
+                        <span class="price">12</span>
+                    </div>
+                    <p>crispy pancetta, creme fraiche, chive, 6 halves</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Fried Brie <span class="tag">(v)</span></h3>
+                        <span class="price">13</span>
+                    </div>
+                    <p>apples, pretzel crostini, candied pecan arugula salad, honey</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Pretzel Bites <span class="tag">(v)</span></h3>
+                        <span class="price">12</span>
+                    </div>
+                    <p>house-made bites, beer cheese, stone-ground honey mustard</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Crispy Brussels <span class="tag">(gf, v)</span></h3>
+                        <span class="price">12</span>
+                    </div>
+                    <p>stone ground vinaigrette, parmesan, balsamic glaze</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Loaded Sweet Tater Tots <span class="tag">(gf)</span></h3>
+                        <span class="price">12</span>
+                    </div>
+                    <p>pancetta, pickled shallot, creme fraiche, chive</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Truffle Parmesan Fries</h3>
+                        <span class="price">10</span>
+                    </div>
+                    <p>truffle aioli</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>App Sampler</h3>
+                        <span class="price">22</span>
+                    </div>
+                    <p>pretzel bites w/ beer cheese, brussels sprouts, deviled eggs</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Sausage Charcuterie</h3>
+                        <span class="price">25</span>
+                    </div>
+                    <p>trio of locally made sausages, honey stone ground mustard, pretzel crostini, brie cheese, gherkin, pickled shallots</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOUP & SALADS -->
+        <section class="menu-category" id="soups-salads">
+            <h2 class="category-title">Soup & Salads</h2>
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Clam Chowder</h3>
+                        <span class="price">10</span>
+                    </div>
+                    <p>New England style, bacon, potato, cream, onion, celery</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Harvest Salad <span class="tag">(v)</span></h3>
+                        <span class="price">17</span>
+                    </div>
+                    <p>field greens, dijon beet vinaigrette, seasonal roasted vegetables, goat cheese, red wine braised onions, crispy garbanzos</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Field Greens <span class="tag">(gf, v)</span></h3>
+                        <span class="price">10</span>
+                    </div>
+                    <p>lemon citronette, parmesan, cucumbers, cherry tomato. Add chicken breast 7</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHNITZEL -->
+        <section class="menu-category featured" id="schnitzel">
+            <h2 class="category-title">Schnitzel</h2>
+            <p class="category-note">served with sage spaetzle garnished with pickled red cabbage</p>
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Jagerschnitzel</h3>
+                        <span class="price">19</span>
+                    </div>
+                    <p>Tender breaded pork topped with veal demi-glace, marinated portobello mushrooms, pickled shallots, herbs</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Wienerschnitzel</h3>
+                        <span class="price">23</span>
+                    </div>
+                    <p>Tender breaded veal, brown butter, arugula, lemon citronette, shaved parmesan, capers</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Hunerschnitzel</h3>
+                        <span class="price">19</span>
+                    </div>
+                    <p>Hand-breaded chicken cutlet with miso-mustard cream sauce, pickled cabbage, herbs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BURGERS & SANDWICHES -->
+        <section class="menu-category" id="burgers">
+            <h2 class="category-title">Burgers & Sandwiches</h2>
+            <p class="category-note">Served with fries or greens, sub sweet potato tots +3, sub truffle fries +2 add a patty +8, sub impossible burger +4, gluten-free bun +2</p>
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Cheeseburger</h3>
+                        <span class="price">16</span>
+                    </div>
+                    <p>1/3 lb Kobe beef patty, American cheese, pickles, tomato, yellow onion, iceberg lettuce, burger sauce, Bosket brioche bun</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Cowboy Burger</h3>
+                        <span class="price">19</span>
+                    </div>
+                    <p>1/3 lb Kobe beef patty, candied jalapeno, Daily's bacon, pickled cabbage, avocado crema, chipotle aioli, Swiss, Bosket brioche bun</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Reuben Burger</h3>
+                        <span class="price">22</span>
+                    </div>
+                    <p>1/3 lb Kobe beef patty, corned beef, sauerkraut, Russian dressing, Swiss, Bosket rye bun</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Seattle Style Brat Burger</h3>
+                        <span class="price">15</span>
+                    </div>
+                    <p>1/4 lb pork brat patty, candied jalapeno cream cheese, sauteed onions, stone ground aioli, house baked pretzel bun</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Grilled Chicken Club</h3>
+                        <span class="price">17</span>
+                    </div>
+                    <p>Marinated grilled chicken, bacon, tossed greens, tomato, Swiss, truffle aioli</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Adult Grilled Cheese</h3>
+                        <span class="price">15</span>
+                    </div>
+                    <p>American cheese, Swiss, roasted red pepper, caramelized onions, thick brioche</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEASONAL OFFERINGS -->
+        <section class="menu-category" id="seasonal">
+            <h2 class="category-title">Seasonal Offerings</h2>
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Butternut Squash Soup</h3>
+                        <span class="price">10</span>
+                    </div>
+                    <p>brown butter, sage, maple, creme fraiche</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Warm Spinach Salad</h3>
+                        <span class="price">16</span>
+                    </div>
+                    <p>stone ground vinaigrette, pancetta, candied pecans, goat cheese, portobello mushrooms</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Beer Braised Pork Sandwich</h3>
+                        <span class="price">16</span>
+                    </div>
+                    <p>HB Dunkel braised pork, pickled cabbage, swiss, stone-ground aioli, house-baked pretzel bun</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Bratloaf</h3>
+                        <span class="price">20</span>
+                    </div>
+                    <p>house seasoned beef & pork meatloaf, sage spaetzle, pickled shallot, herbs</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Sausage Sampler</h3>
+                        <span class="price">21</span>
+                    </div>
+                    <p>choice of two: Brat, Jalapeno cream cheese, polish sausage. Sage spaetzle, stone-ground honey mustard. Add a sausage 7</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Bavarian Braised Brisket</h3>
+                        <span class="price">34</span>
+                    </div>
+                    <p>Slow-cooked brisket, tangy mustard gravy, pickled shallots, herbs, served over sage spaetzle</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESSERTS -->
+        <section class="menu-category" id="desserts">
+            <h2 class="category-title">Desserts</h2>
+            <div class="menu-items-grid desserts-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Sticky Toffee Pudding Cake</h3>
+                        <span class="price">14</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>German Chocolate Cake</h3>
+                        <span class="price">12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Obertal Apple Strudel</h3>
+                        <span class="price">12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Bread Pudding with Vanilla Ice Cream</h3>
+                        <span class="price">12</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KINDER FARE -->
+        <section class="menu-category" id="kids">
+            <h2 class="category-title">Kinder Fare <span class="age-note">12 & Under</span></h2>
+            <p class="category-note">Served with a choice of French fries or apple slices</p>
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Grilled Cheese</h3>
+                        <span class="price">10</span>
+                    </div>
+                    <p>brioche with American and Swiss</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Hot Dog</h3>
+                        <span class="price">10</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Chicken Tenders</h3>
+                        <span class="price">12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Kids Cheeseburger</h3>
+                        <span class="price">12</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Kids Mac & Cheese</h3>
+                        <span class="price">10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COCKTAILS -->
+        <section class="menu-category drinks" id="cocktails">
+            <h2 class="category-title">Cocktails</h2>
+            <p class="category-note">$5 off during happy hour</p>
+            <div class="menu-items-grid cocktails-grid">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>One Love</h3>
+                    </div>
+                    <p>Coconut washed vodka, pineapple, lime</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Mountain Marg</h3>
+                    </div>
+                    <p>tequila, agave, lime, triple sec, salt rim</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Jitterbug</h3>
+                    </div>
+                    <p>gin, honey ginger syrup, lemon, house beet tincture</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Alpine Mai Tai</h3>
+                    </div>
+                    <p>light & dark rum, dry curacao, orgeat, lime</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Autumn Dram</h3>
+                    </div>
+                    <p>tequila, mezcal, lime, allspice dram, poblano liquor, jalapeno syrup</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Fire on the Mountain</h3>
+                    </div>
+                    <p>Bourbon, bitters, orange, cinnamon syrup, clove smoke</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Manhattan</h3>
+                    </div>
+                    <p>rye, vermouth, bitters</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Eggnog</h3>
+                    </div>
+                    <p>dark rum, brandy, Kahlua, whipped cream, warm spices</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Chuck's Espressotini</h3>
+                    </div>
+                    <p>House coldbrew, Licor 43, reposado, aquafaba</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Chai Toddy</h3>
+                    </div>
+                    <p>orange infused bourbon, chai, lemon, honey, ginger</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Seattle Snow Day</h3>
+                    </div>
+                    <p>house blend cocoa, bourbon, allspice dram, whipped cream</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Hot Buttered Rum</h3>
+                    </div>
+                    <p>vanilla ice cream, butter, warm spices, dark rum, whipped cream</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POURS (BEERS) -->
+        <section class="menu-category drinks" id="beers">
+            <h2 class="category-title">Pours</h2>
+            <div class="menu-items-list">
+                <div class="beer-item">Yonder Cider Blackberry Sage - WA</div>
+                <div class="beer-item">One Tree Lemon Basil - WA</div>
+                <div class="beer-item">Pfriem Hazy - OR</div>
+                <div class="beer-item">Icicle Pilsner - WA</div>
+                <div class="beer-item highlight">Dru Bru Colchucks Kolsch - WA</div>
+                <div class="beer-item">Icicle Dragontail IPA - WA</div>
+                <div class="beer-item">Hofbrau Lager - GER</div>
+                <div class="beer-item">Hofbrau Hefeweizen - GER</div>
+                <div class="beer-item">Hofbrau Dunkel - GER</div>
+                <div class="beer-item">Paulaner Oktoberfest Marzen - GER</div>
+                <div class="beer-item">Icicle Dark Persuasion - WA</div>
+                <div class="beer-item">Ghostfish GF</div>
+                <div class="beer-item">Athletic Brewing N/A Beer - blonde, or hazy IPA</div>
+            </div>
+        </section>
+
+        <!-- N/A BEVERAGES -->
+        <section class="menu-category" id="beverages">
+            <h2 class="category-title">N/A Beverages</h2>
+            <div class="menu-items-list beverages-list">
+                <div class="beverage-item">Cucumber Shrub</div>
+                <div class="beverage-item">Thai Tea</div>
+                <div class="beverage-item">Chuck's Signature Italian Soda - Strawberry, blue raspberry or blood orange</div>
+                <div class="beverage-item">Strawberry Lemonade - Strawberry puree with lemonade soda</div>
+                <div class="beverage-item">Henry Weinhard's Soda - Root beer or Creme Soda</div>
+                <div class="beverage-item">Fountain Soda - Coke, Diet Coke, Dr. Pepper, Sprite, Lemonade</div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Brand Section -->
+            <div class="footer-section">
+                <img src="images/LOGO.webp" alt="Colchuck's Logo" class="footer-logo">
+                <h4 class="footer-brand-name">Colchuck's</h4>
+                <p class="footer-tagline">
+                    Modern German comfort food in the heart of Leavenworth.
+                </p>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Colchucks" target="_blank" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/colchucksleavenworthwa/" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                    </svg>
+                    <span class="footer-address">
+                        801 Front St,<br>
+                        Leavenworth, WA 98826
+                    </span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
+                    </svg>
+                    <a href="tel:+15095485074">+1 509-548-5074</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links-list">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="menu.html">Full Menu</a>
+                    <a href="#cocktails">Cocktails</a>
+                    <a href="#beers">Craft Beers</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2024 <span>Colchuck's</span>. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>

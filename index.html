@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colchuck's | Modern German Comfort Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Colchuck's - Modern German comfort food in the heart of Leavenworth. Enjoy our burgers, schnitzel, craft cocktails, and daily happy hour.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/LOGO.webp">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/LOGO.webp" alt="Colchuck's Logo" class="navbar-logo">
+            <span class="brand-text"></span>Colchuck's</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#private-dining">Private Dining</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="#" class="btn reserve-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                <span class="reserve-icon">📞</span>
+                Reserve Table
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content text-center">
+        <!-- Tagline -->
+        <p class="hero-tagline reveal-up" style="--d: 0.2s;">Est. Leavenworth, WA</p>
+
+
+        <!-- Main Title -->
+        <h1 class="hero-title reveal-up" style="--d: 0.4s;">
+            Modern <span>German</span> Comfort Food<br>
+            in the Heart of Leavenworth
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle reveal-up" style="--d: 0.6s;">
+            <span>Burgers</span> • <span>Schnitzel</span> • <span>Craft Cocktails</span> • Happy Hour Daily
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-buttons reveal-up" style="--d: 0.8s;">
+            <a href="#" class="btn btn-primary-gold btn-lg" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                Reserve a Table
+            </a>
+            <a href="menu.html" class="btn btn-outline-cream btn-lg">
+                View Menu
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="scroll-indicator reveal-up" style="--d: 1.2s;">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+    </a>
+</section>
+
+
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-section" id="about">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="about-header text-center mb-5">
+            <span class="about-badge">Our Legacy</span>
+            <h2 class="about-title">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #D4A853; margin-right: 12px; vertical-align: middle;"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                About <span>Colchuck's</span>
+            </h2>
+            <div class="about-divider"></div>
+        </div>
+
+        <div class="about-wrapper">
+            <!-- About Image -->
+            <div class="about-image-side">
+                <div class="about-image-container">
+                    <img src="images/hero-new.jpg" alt="Inside Colchuck's Restaurant">
+                    <div class="about-image-border"></div>
+                </div>
+            </div>
+            
+            <!-- About Content -->
+            <div class="about-content-side">
+                <!-- Badge (Mobile Only / Keep for context) -->
+                <span class="about-badge d-lg-none">Est. 25+ Years</span>
+                
+                <!-- Story Text -->
+                <p class="about-text">
+                    A Leavenworth cornerstone, <span class="about-highlight">Colchuck's</span> has existed in some form for more than twenty-five years. Owned by father and son duo, <span class="about-highlight">Carl and Gavin Evans</span>, our mission is simple: To take pride in creating a wonderful experience for all who come through our doors.
+                </p>
+                
+                <p class="about-text">
+                    We offer a wide selection of <span class="about-highlight">Pacific Northwest and coastal craft beers and ciders</span>, as well as a variety of German and European imports. Serving house-made German schnitzels and sausages, and pouring hand-crafted cocktails for all to enjoy.
+                </p>
+
+                <p class="about-text">
+                    Our kitchen is committed to quality, sourcing <span class="about-highlight">fresh, local ingredients</span> from the bounty of the Pacific Northwest. From our hand-breaded schnitzels to our artisan burgers, every dish is prepared with care and passion, bringing a taste of modern Germany to your table.
+                </p>
+                
+                <p class="about-text">
+                    We know you have plenty of options, and we appreciate you choosing us. <span class="about-highlight">We look forward to meeting you!</span>
+                </p>
+
+                <!-- Signature -->
+                <div class="about-signature">
+                    <p>— Carl & Gavin Evans</p>
+                    <span>Owners</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Feature Cards -->
+        <div class="about-features">
+            <div class="about-feature">
+                <svg class="about-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17 5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2m0 12H3V7h14v10M21 9v6c0 .5-.4 1-1 1h-1V8h1c.6 0 1 .5 1 1"/>
+                </svg>
+                <h4 class="about-feature-title">Craft Beers</h4>
+                <p class="about-feature-text">Pacific Northwest & German imports</p>
+            </div>
+            
+            <div class="about-feature">
+                <svg class="about-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.1 13.34l2.83-2.83L3.91 3.5a4.008 4.008 0 0 0 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
+                </svg>
+                <h4 class="about-feature-title">German Schnitzel</h4>
+                <p class="about-feature-text">House-made traditional recipes</p>
+            </div>
+            
+            <div class="about-feature">
+                <svg class="about-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.5 7c.83 0 1.5-.67 1.5-1.5S8.33 4 7.5 4 6 4.67 6 5.5 6.67 7 7.5 7m0 5c.83 0 1.5-.67 1.5-1.5S8.33 9 7.5 9 6 9.67 6 10.5 6.67 12 7.5 12m4.5-5c.83 0 1.5-.67 1.5-1.5S12.83 4 12 4s-1.5.67-1.5 1.5S11.17 7 12 7"/>
+                </svg>
+                <h4 class="about-feature-title">Craft Cocktails</h4>
+                <p class="about-feature-text">Hand-crafted with care</p>
+            </div>
+            
+            <div class="about-feature">
+                <svg class="about-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <h4 class="about-feature-title">Leavenworth</h4>
+                <p class="about-feature-text">801 Front St, Heart of Town</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MENU SECTION ================= -->
+<section class="menu-section" id="menu">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="menu-header">
+            <span class="menu-badge">Our Cuisine</span>
+            <h2 class="menu-title">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #D4A853; margin-right: 12px; vertical-align: middle;"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                The <span>Menu</span>
+            </h2>
+            <div class="menu-divider"></div>
+            <p class="menu-description">
+                Our menu features German-inspired comfort food, fresh salads, artisan sandwiches,
+                and hearty classics prepared with quality ingredients.
+            </p>
+        </div>
+        
+        <!-- Menu Grid -->
+        <div class="menu-grid">
+            <!-- Dish 1 -->
+            <div class="menu-card">
+                <div class="menu-card-image">
+                    <img src="images/menu-1.webp" alt="Salmon Niçoise Salad">
+                    <div class="menu-card-overlay"></div>
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-card-title">Salmon Niçoise Salad</h3>
+                    <p class="menu-card-desc">Fresh salmon, eggs, greens, olives, and seasonal vegetables</p>
+                </div>
+            </div>
+            
+            <!-- Dish 2 -->
+            <div class="menu-card">
+                <div class="menu-card-image">
+                    <img src="images/menu-2.webp" alt="Cheeseburger & Fries">
+                    <div class="menu-card-overlay"></div>
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-card-title">Cheeseburger & Fries</h3>
+                    <p class="menu-card-desc">Juicy beef burger topped with melted cheese and crispy fries</p>
+                </div>
+            </div>
+            
+            <!-- Dish 3 -->
+            <div class="menu-card">
+                <div class="menu-card-image">
+                    <img src="images/menu-3.png" alt="Cheese & Charcuterie Board">
+                    <div class="menu-card-overlay"></div>
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-card-title">Cheese & Charcuterie Board</h3>
+                    <p class="menu-card-desc">Selection of artisan cheeses, bread, pickles, and condiments</p>
+                </div>
+            </div>
+            
+            <!-- Dish 4 -->
+            <div class="menu-card">
+                <div class="menu-card-image">
+                    <img src="images/menu-4.webp" alt="Käsespätzle">
+                    <div class="menu-card-overlay"></div>
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-card-title">Käsespätzle</h3>
+                    <p class="menu-card-desc">Traditional German egg noodles tossed with cheese and herbs</p>
+                </div>
+            </div>
+            
+            <!-- Dish 5 -->
+            <div class="menu-card">
+                <div class="menu-card-image">
+                    <img src="images/menu-5.webp" alt="Steak with Chimichurri">
+                    <div class="menu-card-overlay"></div>
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-card-title">Steak with Chimichurri</h3>
+                    <p class="menu-card-desc">Grilled steak served with herb chimichurri sauce and fries</p>
+                </div>
+            </div>
+            
+            <!-- Dish 6 -->
+            <div class="menu-card">
+                <div class="menu-card-image">
+                    <img src="images/menu-6.png" alt="Schnitzel Sandwich">
+                    <div class="menu-card-overlay"></div>
+                </div>
+                <div class="menu-card-content">
+                    <h3 class="menu-card-title">Schnitzel Sandwich</h3>
+                    <p class="menu-card-desc">Crispy schnitzel on fresh bakery bread</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View Full Menu Button -->
+        <div class="menu-cta">
+            <a href="menu.html" class="btn btn-primary-gold btn-lg">View Full Menu</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROMOTIONS SECTION ================= -->
+<section class="promotions-section" id="promotions">
+    <div class="container">
+        
+        <div class="section-header text-center mb-5">
+            <span class="section-badge">Special Offers</span>
+            <h2 class="section-title">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #D4A853; margin-right: 12px; vertical-align: middle;"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                Our <span>Promotions</span>
+            </h2>
+            <p class="section-text">
+                Enjoy great food, drinks, and family-friendly offers at Colchuck’s.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Happy Hour -->
+            <div class="col-md-6">
+                <div class="promo-card">
+                    <div class="promo-icon">🍺</div>
+                    <h3>Happy Hour</h3>
+                    <p class="promo-time">
+                        Daily <strong>3:00 PM – 5:30 PM</strong>
+                    </p>
+                    <p class="promo-desc">
+                        Enjoy special pricing on cocktails, beer, wine, and select appetizers.
+                        The perfect way to unwind in the heart of Leavenworth.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kids Eat Free -->
+            <div class="col-md-6">
+                <div class="promo-card highlight">
+                    <div class="promo-icon">👨‍👩‍👧</div>
+                    <h3>Kids Eat Free</h3>
+                    <p class="promo-time">
+                        Daily <strong>12:00 PM – 3:00 PM</strong>
+                    </p>
+                    <p class="promo-desc">
+                        Kids eat free with the purchase of an adult meal.
+                        A family-friendly dining experience everyone will enjoy.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PRIVATE DINING SECTION ================= -->
+<section class="private-dining-section" id="private-dining">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6">
+                <span class="section-badge">Private Events</span>
+
+                <h2 class="section-title">
+                    Private <span>Dining</span> at Colchuck’s
+                </h2>
+
+                <p class="section-text">
+                    Host unforgettable gatherings in the heart of Leavenworth.  
+                    Our private dining space is perfect for celebrations, corporate events,
+                    and special occasions.
+                </p>
+
+                <ul class="private-dining-features">
+                    <li>✔ Accommodates up to <strong>115 guests</strong></li>
+                    <li>✔ Ideal for birthdays, anniversaries & corporate events</li>
+                    <li>✔ Custom food & cocktail options available</li>
+                </ul>
+
+                <div class="private-dining-actions">
+                    <a href="private-dining.html" class="btn btn-primary-gold">
+                        Explore Private Dining
+                    </a>
+                    <a href="tel:+15095485074" class="btn btn-outline-cream">
+                        Call for Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6">
+                <div class="private-dining-image-wrapper">
+                    <img src="images/private-dining.png" alt="Private dining at Colchuck's">
+                    <div class="image-accent-border"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= GALLERY SECTION ================= -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="gallery-header text-center">
+            <span class="gallery-badge">Moments</span>
+            <h2 class="gallery-title">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #D4A853; margin-right: 12px; vertical-align: middle;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                Cinematic <span>Gallery</span>
+            </h2>
+            <div class="gallery-divider"></div>
+            <p class="gallery-description">
+                Experience the soulful atmosphere and crafted details of Colchuck's.
+            </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-1.png" alt="Colchuck's Interior">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Warm Ambiance</h3>
+                            <p>A cozy gathering place where mountain charm meets modern comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-new.jpg" alt="Crafted Cocktail">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Friendly Gatherings</h3>
+                            <p>Celebrate life's moments with friends and family in our cozy atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-3.png" alt="Traditional Schnitzel">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Heritage Flavors</h3>
+                            <p>Our schnitzels follow generations of tradition with a modern PNW twist.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-4.png" alt="Leavenworth Scenery">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Bavarian Spirit</h3>
+                            <p>Nestled in the heart of Leavenworth, surrounded by Alpine beauty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-5.png" alt="Craft Beer Pour">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Pours & Pints</h3>
+                            <p>The finest selection of regional craft beers and German imports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-6new.jpg" alt="Happy Hours">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Joyful Moments</h3>
+                            <p>Creating wonderful experiences for everyone who walks through our doors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/menu-7.png" alt="Signature Chocolate Cake">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Sweet Indulgence</h3>
+                            <p>Our famous house-made chocolate cake, a perfect finale to your meal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item">
+                <div class="gallery-card">
+                    <img src="images/gallery-8.webp" alt="Cozy Dining Area">
+                    <div class="gallery-overlay">
+                        <div class="gallery-story">
+                            <h3>Warm Hospitality</h3>
+                            <p>Relax in our carefully curated dining space, designed for comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= RESERVATION MODAL ================= -->
+<div class="modal fade reservation-modal" id="reservationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            
+            <!-- Close Button -->
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal-body">
+                
+                <div id="reservationFormContent">
+                    <div class="text-center mb-4">
+                        <span class="modal-subtitle">Join Us</span>
+                        <h3 class="modal-title">Reserve Your Table</h3>
+                    </div>
+
+                    <form id="reservationForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Time</label>
+                                <select class="form-control" required>
+                                    <option value="">Select Time</option>
+                                    <option>5:00 PM</option>
+                                    <option>5:30 PM</option>
+                                    <option>6:00 PM</option>
+                                    <option>6:30 PM</option>
+                                    <option>7:00 PM</option>
+                                    <option>7:30 PM</option>
+                                    <option>8:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Guests</label>
+                                <select class="form-control" required>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="6+">Larger Group (Call us)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Special Requests</label>
+                                <textarea class="form-control" rows="2" placeholder="Occasion, dietary restrictions, etc."></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary-gold w-100">Confirm Reservation</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- SUCCESS MESSAGE -->
+                <div id="reservationSuccess" class="text-center" style="display: none; padding: 20px 0;">
+                    <div style="font-size: 3.5rem; margin-bottom: 15px;">🥂</div>
+                    <h3 class="modal-title mb-3">Table Reserved!</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">
+                        Your reservation has been successfully booked. We look forward to hosting you at Colchuck's.
+                    </p>
+                    <button type="button" class="btn btn-outline-cream mt-4" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" id="footer">
+
+<!-- ================= RESERVATION GUIDELINES ================= -->
+<section class="reservation-guidelines">
+    <div class="container">
+        <div class="guidelines-wrapper">
+            
+            <div class="guidelines-icon">
+                ⏰
+            </div>
+
+            <div class="guidelines-content">
+                <h3>Reservation Guidelines</h3>
+                <p class="guidelines-subtext">
+                    To ensure the best experience for all guests, please review our reservation policy:
+                </p>
+
+                <ul class="guidelines-list">
+                    <li>Reservations are held for <strong>10 minutes</strong> past the scheduled time</li>
+                    <li>Please include <strong>children</strong> in your total party size</li>
+                    <li>Kindly note if <strong>minors</strong> are present in your group</li>
+                    <li>For parties of <strong>more than 10 guests</strong>, please call us directly</li>
+                </ul>
+            </div>
+
+            <div class="guidelines-action">
+                <a href="tel:+15095485074" class="btn btn-outline-cream">
+                    📞 Call for Large Groups
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq-section" id="faq">
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <span class="section-badge">Good to Know</span>
+            <h2 class="section-title">
+                <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #D4A853; margin-right: 12px; vertical-align: middle;"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Frequently Asked <span>Questions</span>
+            </h2>
+            <p class="section-text">
+                Everything you need to know before visiting Colchuck’s.
+            </p>
+        </div>
+
+        <div class="accordion faq-accordion" id="faqAccordion">
+
+            <!-- GENERAL INFORMATION -->
+            <h4 class="faq-group-title">General Information</h4>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqHours">
+                        What are your hours of operation?
+                    </button>
+                </h2>
+                <div id="faqHours" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our hours vary depending on the season. The hours listed at the bottom of this page
+                        and on Google are always kept up to date.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqLocation">
+                        Where are you located?
+                    </button>
+                </h2>
+                <div id="faqLocation" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We are located on <strong>Front Street & 8th Street</strong> in Leavenworth, WA,
+                        on the upstairs floor above Stein.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqParking">
+                        Do you have parking available?
+                    </button>
+                </h2>
+                <div id="faqParking" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We do not have a private parking lot. Paid street parking is available throughout
+                        Leavenworth, including two blocks east on Highway 2.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqAccess">
+                        Are you wheelchair accessible?
+                    </button>
+                </h2>
+                <div id="faqAccess" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Unfortunately, we are not wheelchair accessible. Guests must use stairs to access
+                        Colchuck’s — but it’s worth the climb!
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqFamily">
+                        Is your restaurant family-friendly?
+                    </button>
+                </h2>
+                <div id="faqFamily" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes! Colchuck’s is family-friendly.
+                    </div>
+                </div>
+            </div>
+
+            <!-- MENU & DINING -->
+            <h4 class="faq-group-title mt-4">Menu & Dining</h4>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqCuisine">
+                        What type of cuisine do you serve?
+                    </button>
+                </h2>
+                <div id="faqCuisine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We serve modern German comfort food, creative burgers,
+                        and craft cocktails.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqDiet">
+                        Do you offer vegetarian, vegan, or gluten-free options?
+                    </button>
+                </h2>
+                <div id="faqDiet" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we offer vegetarian and gluten-free options.
+                        Please ask your server for details.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqKidsMenu">
+                        Do you have a kids’ menu?
+                    </button>
+                </h2>
+                <div id="faqKidsMenu" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we offer a kids’ menu.  
+                        <strong>Kids eat free daily from 12:00–3:00 PM</strong>
+                        with the purchase of an adult meal.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqScratch">
+                        Are your dishes made from scratch?
+                    </button>
+                </h2>
+                <div id="faqScratch" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes! Our sauces, schnitzels, and burger toppings are prepared in-house from scratch.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqCustomize">
+                        Can I customize my order?
+                    </button>
+                </h2>
+                <div id="faqCustomize" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes! We are happy to accommodate reasonable customizations when possible.
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESERVATIONS & EVENTS -->
+            <h4 class="faq-group-title mt-4">Reservations & Events</h4>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqReservation">
+                        Do I need a reservation?
+                    </button>
+                </h2>
+                <div id="faqReservation" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Reservations are recommended but not required most of the year.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqHowReserve">
+                        How can I make a reservation?
+                    </button>
+                </h2>
+                <div id="faqHowReserve" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Reservations can be made using the reservation link at the top of this page.
+                        Please include children in your party size.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqLargeGroup">
+                        Do you accommodate large groups or private events?
+                    </button>
+                </h2>
+                <div id="faqLargeGroup" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes. We accept standard reservations up to <strong>20 guests</strong>
+                        and private dining events for up to <strong>115 guests</strong>.
+                        For large groups, please call us directly.
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAYMENT & POLICIES -->
+            <h4 class="faq-group-title mt-4">Payment & Policies</h4>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqPayment">
+                        What forms of payment do you accept?
+                    </button>
+                </h2>
+                <div id="faqPayment" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We accept all major U.S. credit cards, tap-to-pay, Apple Pay, and cash.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqCancel">
+                        Do you have a cancellation or no-show policy?
+                    </button>
+                </h2>
+                <div id="faqCancel" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        For reservations over 5 guests, a <strong>$5 per person fee</strong>
+                        applies for no-shows or cancellations made within two hours of the reservation time.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqGratuity">
+                        Are tips included in the bill?
+                    </button>
+                </h2>
+                <div id="faqGratuity" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Automatic gratuity is added to parties of <strong>eight or more</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqAnimals">
+                        Do you allow animals?
+                    </button>
+                </h2>
+                <div id="faqAnimals" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Per Washington State Food Code, only service animals are permitted inside the restaurant.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <h4 class="faq-group-title mt-4">Services</h4>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqTakeout">
+                        Do you offer takeout or delivery?
+                    </button>
+                </h2>
+                <div id="faqTakeout" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We offer takeout, but we do not provide delivery service.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqOnline">
+                        Can I order online?
+                    </button>
+                </h2>
+                <div id="faqOnline" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Please review our menu online and call to place takeout orders.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqContact">
+                        How can I contact you for more information?
+                    </button>
+                </h2>
+                <div id="faqContact" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can email us at
+                        <a href="mailto:colchucksleavenworth@gmail.com">
+                            colchucksleavenworth@gmail.com
+                        </a>
+                        or call us at <a href="tel:+15095485074">(509) 548-5074</a>.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <div class="container">
+        <div class="footer-content">
+            <!-- Brand Section -->
+            <div class="footer-section">
+                <img src="images/LOGO.webp" alt="Colchuck's Logo" class="footer-logo">
+                <h4 class="footer-brand-name">Colchuck's</h4>
+                <p class="footer-tagline">
+                    Modern German comfort food in the heart of Leavenworth. 
+                    Where tradition meets contemporary dining.
+                </p>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Colchucks" target="_blank" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/colchucksleavenworthwa/" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section" id="contact">
+                <h3>Contact Us</h3>
+                
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                    </svg>
+                    <span class="footer-address">
+                        801 Front St,<br>
+                        Leavenworth, WA 98826,<br>
+                        United States
+                    </span>
+                </div>
+
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                    </svg>
+                    <a href="mailto:colchucksleavenworth@gmail.com">colchucksleavenworth@gmail.com</a>
+                </div>
+
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
+                    </svg>
+                    <a href="tel:+15095485074">+1 509-548-5074</a>
+                </div>
+            </div>
+
+            <!-- Hours Section -->
+            <div class="footer-section">
+                <h3>Hours</h3>
+                
+                <!-- Holiday Notice -->
+                <div class="footer-holiday-notice">
+                    <strong>HOLIDAY HOURS</strong><br>
+                    12:00pm - 8:30pm<br>
+                    <em>Closed Christmas Eve & Christmas Day</em>
+                </div>
+                
+                <!-- Regular Hours -->
+                <div class="footer-hours-list">
+                    <div class="footer-hours-row">
+                        <span>Monday</span>
+                        <span>3:00 pm - 8:30 pm</span>
+                    </div>
+                    <div class="footer-hours-row closed">
+                        <span>Tuesday/Wednesday</span>
+                        <span>Closed</span>
+                    </div>
+                    <div class="footer-hours-row">
+                        <span>Thursday</span>
+                        <span>3:00 pm - 8:30 pm</span>
+                    </div>
+                    <div class="footer-hours-row">
+                        <span>Friday</span>
+                        <span>12:00 pm - 9:00 pm</span>
+                    </div>
+                    <div class="footer-hours-row">
+                        <span>Saturday</span>
+                        <span>12:00 pm - 9:00 pm</span>
+                    </div>
+                    <div class="footer-hours-row">
+                        <span>Sunday</span>
+                        <span>12:00 pm - 8:30 pm</span>
+                    </div>
+                </div>
+                
+                <!-- Happy Hour -->
+                <div class="footer-happy-hour">
+                    🍻 Happy Hour: 3:00pm - 4:30pm
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2024 <span>Colchuck's</span>. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const resForm = document.getElementById('reservationForm');
+    const resContent = document.getElementById('reservationFormContent');
+    const resSuccess = document.getElementById('reservationSuccess');
+
+    if(resForm) {
+        resForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            resContent.style.opacity = '0';
+            resContent.style.transition = 'opacity 0.4s ease';
+            
+            setTimeout(() => {
+                resContent.style.display = 'none';
+                resSuccess.style.display = 'block';
+                // Trigger reflow
+                void resSuccess.offsetWidth;
+                resSuccess.style.opacity = '1';
+                resSuccess.style.transition = 'opacity 0.4s ease';
+            }, 400);
+        });
+    }
+
+    // Reset form when modal closes
+    const resModal = document.getElementById('reservationModal');
+    if(resModal) {
+        resModal.addEventListener('hidden.bs.modal', function () {
+            if(resForm) resForm.reset();
+            resContent.style.display = 'block';
+            resContent.style.opacity = '1';
+            resSuccess.style.display = 'none';
+            resSuccess.style.opacity = '0';
+        });
+    }
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ================= CHATBOT UI ================= -->
+<div id="chatbot-launcher" class="chatbot-launcher" title="Chat with us!">
+    <div class="launcher-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.015 21.985a1 1 0 0 0 1 1.015L8 21.662c1.47.851 3.179 1.338 5 1.338 5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.474 0-2.85-.425-4.013-1.157a1 1 0 0 0-.895-.047l-3.03.865.865-3.03a1 1 0 0 0-.047-.895A7.947 7.947 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+            <circle cx="8" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="16" cy="12" r="1.5"/>
+        </svg>
+    </div>
+</div>
+
+<div id="chatbot-window" class="chatbot-window hidden">
+    <div class="chatbot-header">
+        <div class="header-info">
+            <img src="images/LOGO.webp" alt="Colchuck's Bot" class="bot-avatar">
+            <div class="header-text">
+                <h3>Colchuck's Concierge ✨</h3>
+                <span class="online-status">Online</span>
+            </div>
+        </div>
+        <button id="close-chatbot" class="close-btn">&times;</button>
+    </div>
+    
+    <div id="chatbot-messages" class="chatbot-messages">
+        <div class="message bot-message">
+            <div class="message-content">
+                Good morning! I'm your Colchuck's Concierge. How can I help you today?
+            </div>
+        </div>
+    </div>
+    
+    <div id="chatbot-suggestions" class="chatbot-suggestions"></div>
+    
+    <div class="chatbot-input">
+        <button id="clear-chatbot" class="clear-btn" title="Clear chat">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </svg>
+        </button>
+        <textarea id="chatbot-input-field" placeholder="Type your message..." rows="1"></textarea>
+        <button id="send-chatbot-msg" class="send-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Scroll to Top Button (NEW) -->
+<button id="backToTop" title="Back to Top" style="
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #D4A853, #C9953D);
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(212, 168, 83, 0.4);
+    z-index: 9999999;
+    transition: all 0.3s ease;
+">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F0F0F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>
+
+<!-- Custom JS -->
+<script src="bot.js"></script>
+<script src="script.js"></script>
+
+<!-- Inline scroll-to-top script (guaranteed to work) -->
+<script>
+(function() {
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+    
+    function checkScroll() {
+        var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var chatWindow = document.getElementById('chatbot-window');
+        var isChatOpen = chatWindow && !chatWindow.classList.contains('hidden');
+        
+        if (scrollPos > 300 && !isChatOpen) {
+            btn.style.display = 'flex';
+        } else {
+            btn.style.display = 'none';
+        }
+    }
+    
+    window.addEventListener('scroll', checkScroll);
+    document.addEventListener('scroll', checkScroll);
+    setInterval(checkScroll, 500); // Fallback check every 500ms
+    
+    // Custom smooth scroll function with controlled speed
+    function smoothScrollToTop(duration) {
+        var startPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var startTime = null;
+        
+        function easeOutQuad(t) {
+            return t * (2 - t); // Smooth easing - starts fast, slows at end
+        }
+        
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            var timeElapsed = currentTime - startTime;
+            var progress = Math.min(timeElapsed / duration, 1);
+            var easedProgress = easeOutQuad(progress);
+            
+            var newPos = startPos * (1 - easedProgress);
+            window.scrollTo(0, newPos);
+            document.documentElement.scrollTop = newPos;
+            document.body.scrollTop = newPos;
+            
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        }
+        
+        requestAnimationFrame(animation);
+    }
+    
+    btn.addEventListener('click', function() {
+        // Scroll to top over 800ms (adjust this value for slower/faster)
+        smoothScrollToTop(800);
+    });
+    
+    // Hover effect
+    btn.addEventListener('mouseenter', function() {
+        btn.style.transform = 'translateY(-5px)';
+        btn.style.boxShadow = '0 8px 30px rgba(212, 168, 83, 0.5)';
+    });
+    btn.addEventListener('mouseleave', function() {
+        btn.style.transform = 'translateY(0)';
+        btn.style.boxShadow = '0 4px 20px rgba(212, 168, 83, 0.4)';
+    });
+    
+    // Initial check
+    checkScroll();
+})();
+</script>
+</body>
+</html>
+

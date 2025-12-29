@@ -1,0 +1,334 @@
+/* ========== MENU PAGE STYLES ========== */
+
+/* Menu Hero Section */
+.menu-hero {
+    position: relative;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.menu-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(212, 168, 83, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(212, 168, 83, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.menu-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    opacity: 0.1;
+}
+
+.menu-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-hero-title span {
+    color: var(--primary-gold);
+}
+
+.menu-hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
+}
+
+/* Happy Hour Banner */
+.happy-hour-banner {
+    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--primary-gold-dark) 100%);
+    padding: 40px 0;
+}
+
+.happy-hour-box {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.happy-hour-box h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--bg-dark);
+    margin-bottom: 10px;
+}
+
+.happy-hour-time {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--bg-dark);
+    margin-bottom: 15px;
+}
+
+.happy-hour-deals {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 5px;
+}
+
+/* Menu Page Content */
+.menu-page-content {
+    background: var(--bg-dark);
+    padding: 80px 0;
+}
+
+/* Menu Category */
+.menu-category {
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.1);
+}
+
+.menu-category:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.menu-category.featured {
+    background: rgba(212, 168, 83, 0.03);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 168, 83, 0.15);
+}
+
+.category-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    color: var(--cream);
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-gold), var(--primary-gold-light));
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+.category-title .age-note {
+    font-size: 0.5em;
+    color: var(--primary-gold);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.category-note {
+    text-align: center;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu Items Grid */
+.menu-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.menu-items-grid.desserts-grid,
+.menu-items-grid.cocktails-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Menu Item Card */
+.menu-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(212, 168, 83, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    transition: all var(--transition-fast);
+}
+
+.menu-item:hover {
+    background: rgba(212, 168, 83, 0.05);
+    border-color: rgba(212, 168, 83, 0.25);
+    transform: translateY(-3px);
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.menu-item-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--cream);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.menu-item-header h3 .tag {
+    font-size: 0.75rem;
+    color: var(--primary-gold);
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.menu-item-header .price {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--primary-gold);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.menu-item-header .price::before {
+    content: '$';
+    font-size: 0.85em;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Menu Items List (for beers/beverages) */
+.menu-items-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.beer-item,
+.beverage-item {
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(212, 168, 83, 0.08);
+    border-radius: 8px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+}
+
+.beer-item:hover,
+.beverage-item:hover {
+    background: rgba(212, 168, 83, 0.08);
+    border-color: rgba(212, 168, 83, 0.2);
+}
+
+.beer-item.highlight {
+    background: rgba(212, 168, 83, 0.1);
+    border-color: var(--primary-gold);
+    color: var(--primary-gold);
+    font-weight: 500;
+}
+
+/* Drinks Section */
+.menu-category.drinks .category-title {
+    color: var(--primary-gold);
+}
+
+/* Footer Links List for Menu Page */
+.footer-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links-list a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    font-size: 0.95rem;
+}
+
+.footer-links-list a:hover {
+    color: var(--primary-gold);
+    padding-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-hero {
+        min-height: 35vh;
+        padding-top: 80px;
+    }
+
+    .menu-hero-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .happy-hour-banner {
+        padding: 30px 0;
+    }
+
+    .happy-hour-box {
+        padding: 20px;
+    }
+
+    .menu-page-content {
+        padding: 50px 0;
+    }
+
+    .menu-category {
+        margin-bottom: 50px;
+        padding-bottom: 40px;
+    }
+
+    .menu-category.featured {
+        padding: 25px;
+    }
+
+    .menu-items-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        padding: 20px;
+    }
+
+    .menu-items-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active nav link */
+.nav-link.active {
+    color: var(--primary-gold) !important;
+}
