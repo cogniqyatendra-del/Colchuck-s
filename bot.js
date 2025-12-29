@@ -100,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Refresh welcome message when opening
             showInitialWelcome();
         }
+        // Hide the launcher while the chat window is open (prevents overlap on small screens)
+        const isOpen = !window.classList.contains('hidden');
+        try {
+            launcher.style.display = isOpen ? 'none' : 'flex';
+        } catch (e) {}
+
         // Notify scroll listener to update backToTop visibility
         window.dispatchEvent(new Event('scroll'));
     });
@@ -107,6 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         window.classList.add('hidden');
+        // restore launcher visibility when chat closed
+        try { launcher.style.display = 'flex'; } catch (e) {}
         // Notify scroll listener to update backToTop visibility
         window.dispatchEvent(new Event('scroll'));
     });
